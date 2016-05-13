@@ -3,47 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
 
     <title>Canvas</title>
 
-    
-      <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
-      <link href="toolkit-minimal.css" rel="stylesheet">
-      <link href="application-minimal.css" rel="stylesheet">
-    
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/toolkit-minimal.css" rel="stylesheet">
+    <link href="css/application-minimal.css" rel="stylesheet">
 
-    
-
-    <style>
-      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-      /* this chunk of css is not part of the toolkit :) */
-      /* …curses ios, etc… */
-      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-        body {
-          width: 1px;
-          min-width: 100%;
-          *width: 100%;
-        }
-        #stage {
-          height: 1px;
-          overflow: auto;
-          min-height: 100vh;
-          -webkit-overflow-scrolling: touch;
-        }
-      }
-    </style>
   </head>
 
 
 <body>
-  
-
-
 
 <nav class="dt qf py tu eu app-navbar">
   <div class="e">
@@ -89,9 +64,9 @@
 <div class="k aou">
   <div class="e eq t" data-transition="entrance">
     <blockquote class="aqr">
-      <img class="ed" src="http://bootstrap-themes.github.io/marketing/assets/img/avatar-mdo.png">
+      <img class="ed" src="img/avatar.jpg">
       <p>
-        “Task management. Calendars. Email. They all have one thing in common&hellip;literally no one enjoys managing them. Thanks to years of research, we can now predict every single thing you'll ever have to do or go to. Yeah, we're that good.”
+        “Every developer has a story. Behind that beautiful code is a tale of sheer brilliance, technical innovation, or an application that inspires, entertains and makes life better for people. Canvas provides a platform. You've got the brush &hellip;”
       </p>
       <cite>Todd Austin, Creator of Canvas</cite>
     </blockquote>
@@ -157,21 +132,31 @@
         <ul class="do">
           <li class="ah">
             <div class="apw ew">
-              <span class="a adc"><i class="fa fa-fw fa-picture-o" style="color: rgb(104,93,159)"></i></span>
+              <span class="a adc"><i class="fa fa-fw fa-text-width" style="color: rgb(104,93,159)"></i></span>
             </div>
-            <p class="apv alr"><strong>Upload unlimited images</strong></p>
+            <p class="apv alr"><strong>Markdown</strong></p>
             <p class="apv">
-              We process all the images you upload and take full advantage of modern cloud based storage to host them at blazing fast speeds.
+              All content is stored as markdown so it’s portable and easy to move in and out.
             </p>
           </li>
 
           <li class="ah">
             <div class="apw ew">
-              <span class="a acy"><i class="fa fa-fw fa-hourglass-2" style="color: rgb(104,93,159)"></i></span>
+              <span class="a adc"><i class="fa fa-fw fa-html5" style="color: rgb(104,93,159)"></i></span>
             </div>
-            <p class="apv alr"><strong>Tracked time savings</strong></p>
+            <p class="apv alr"><strong>Theming</strong></p>
             <p class="apv">
-              This means you save tons of time by using our world class task manager and calendar and constantly reminds you how great it is.
+              Custom LESS files are provided so you can modify the theme to your own taste and preference.
+            </p>
+          </li>
+
+          <li class="ah">
+            <div class="apw ew">
+              <span class="a acy"><i class="fa fa-fw fa-calendar" style="color: rgb(104,93,159)"></i></span>
+            </div>
+            <p class="apv alr"><strong>Scheduled Posts</strong></p>
+            <p class="apv">
+              Write posts and schedule the time and date you want them to appear.
             </p>
           </li>
 
@@ -182,26 +167,71 @@
 
           <li class="ah">
             <div class="apw ew">
-              <span class="a yw"><i class="fa fa-fw fa-cloud" style="color: rgb(104,93,159)"></i></span>
+              <span class="a yw"><i class="fa fa-fw fa-tags" style="color: rgb(104,93,159)"></i></span>
             </div>
-            <p class="apv alr"><strong>Share from anywhere</strong></p>
+            <p class="apv alr"><strong>Tagging</strong></p>
             <p class="apv">
-              Do it over the cloud, from anywhere, on any device. Mochi is super fast and always available, to not only you, but all your friends
+              Canvas allows you to tag posts for categorization and for grouping.
             </p>
           </li>
 
           <li class="ah">
             <div class="apw ew">
-              <span class="a aay"><i class="fa fa-fw fa-smile-o" style="color: rgb(104,93,159)"></i></span>
+              <span class="a acy"><i class="fa fa-fw fa-cogs" style="color: rgb(104,93,159)"></i></span>
             </div>
-            <p class="apv alr"><strong>Use stickers and express yourself</strong></p>
+            <p class="apv alr"><strong>Simple Configuration</strong></p>
             <p class="apv">
-              Share with emoji anyone in the world. We've baked them directly into Mochi. These probably won't help with productivity though.
+              A single configuration file holds all of the necessary global variables to set in order to get you up and running in no time.
+            </p>
+          </li>
+
+          <li class="ah">
+            <div class="apw ew">
+              <span class="a aay"><i class="fa fa-fw fa-upload" style="color: rgb(104,93,159)"></i></span>
+            </div>
+            <p class="apv alr"><strong>Uploading</strong></p>
+            <p class="apv">
+              File management and configuration come fully functional straight out of the box. Create folders and upload files or images.
             </p>
           </li>
         </ul>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="k aou aoq ams q">
+  <div class="e">
+    <div class="c alh">
+      <div class="go ta tb">
+        <p class="ak">
+          We focused on design relentlessly. We loved it so much, we spent just as much time taking these crazy high resolution photos. Here are some more stats on that.
+        </p>
+        <div class="c">
+          <div class="gb">
+            <div class="ars">
+              <h1 class="aqg apd">1m</h1>
+              <span class="aqh">Photos</span>
+            </div>
+          </div>
+          <div class="gb">
+            <div class="ars">
+              <h1 class="aqg apd">2k</h1>
+              <span class="aqh">gigs</span>
+            </div>
+          </div>
+          <div class="gb">
+            <div class="ars">
+              <h1 class="aqg apd">7</h1>
+              <span class="aqh">Friends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ep r">
+    <img src="http://bootstrap-themes.github.io/marketing/assets/img/iphone-reverse-perspective-sized.jpg" class="u" data-transition="entrance">
   </div>
 </div>
 
@@ -267,86 +297,28 @@
   </div>
 </div>
 
-<div class="k aou aoq ams q">
-  <div class="e">
-    <div class="c alh">
-      <div class="go ta tb">
-        <p class="ak">
-          We focused on design relentlessly. We loved it so much, we spent just as much time taking these crazy high resolution photos. Here are some more stats on that.
-        </p>
-        <div class="c">
-          <div class="gb">
-            <div class="ars">
-              <h1 class="aqg apd">1m</h1>
-              <span class="aqh">Photos</span>
-            </div>
-          </div>
-          <div class="gb">
-            <div class="ars">
-              <h1 class="aqg apd">2k</h1>
-              <span class="aqh">gigs</span>
-            </div>
-          </div>
-          <div class="gb">
-            <div class="ars">
-              <h1 class="aqg apd">7</h1>
-              <span class="aqh">Friends</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ep r">
-    <img src="http://bootstrap-themes.github.io/marketing/assets/img/iphone-reverse-perspective-sized.jpg" class="u" data-transition="entrance">
-  </div>
-</div>
-
-<div class="k aou eq">
-  <div class="fo">
-    <p class="ak amf">
-      Join over 900,000 nerds already using Mochi. Get the Mochi App <strong>free</strong> forever!
-    </p>
-    <form class="om">
-      <input class="form-control ag" placeholder="Email Address">
-      <input class="form-control ag" type="password" placeholder="Create a Password">
-      <button class="dl ot ag">Get started</button>
-    </form>
-    <small class="am">
-      By clicking "Get started" I agree to Mochi's
-      <a href="#">Terms of service</a>
-    </small>
-  </div>
-</div>
-
 <div class="k s">
   <div class="e">
     <div class="c">
       <div class="fu ag">
         <ul class="fh sv">
-          <li><h6 class="eu">Products</h6></li>
-          <li>Todo</li>
-          <li>Calendario</li>
-          <li>Email Town</li>
-          <li>Pomodorotary</li>
-          <li>ChillTower</li>
+          <li><h6 class="eu">Developers</h6></li>
+          <li><a href="http://toddaustin.noip.me">Todd Austin</a></li>
         </ul>
       </div>
       <div class="fu ag">
         <ul class="fh sv">
-          <li><h6 class="eu">Extras</h6></li>
-          <li>AutotuneU</li>
-          <li>Freestyler</li>
-          <li>Chillaxation</li>
+          <li><h6 class="eu">License</h6></li>
+          <li><a href="https://opensource.org/licenses/MIT">MIT license</a></li>
         </ul>
       </div>
       <div class="fu ag">
         <ul class="fh sv">
-          <li><h6 class="eu">Support</h6></li>
-          <li>Online Support</li>
-          <li>Telephone Sales</li>
-          <li>Help Desk</li>
-          <li>Workshops</li>
+          <li><h6 class="eu">Releases</h6></li>
+          <li><a href="https://github.com/austintoddj/Canvas/releases/tag/v1.0.3">v1.0.3</a></li>
+          <li><a href="https://github.com/austintoddj/Canvas/releases/tag/v1.0.2">v1.0.2</a></li>
+          <li><a href="https://github.com/austintoddj/Canvas/releases/tag/v1.0.1">v1.0.1</a></li>
+          <li><a href="https://github.com/austintoddj/Canvas/releases/tag/v1.0">v1.0</a></li>
         </ul>
       </div>
        <div class="gk">
@@ -358,8 +330,8 @@
 </div>
 
 
-    <script src="jquery.min.js"></script>
-    <script src="toolkit.js"></script>
-    <script src="application.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/toolkit.js"></script>
+    <script src="js/application.js"></script>
   </body>
 </html>
